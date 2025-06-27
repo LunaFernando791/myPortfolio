@@ -22,7 +22,7 @@
 
   <header class="text-center p-6 bg-gray-800">
     <h1 class="text-4xl font-bold text-white">Fernando Luna</h1>
-    <p class="text-gray-400">Desarrollador Web & Móvil | Amante del código limpio</p>
+    <p class="text-gray-400">Desarrollador Web & Móvil | Ingeniero Informático</p>
 
   </header>
 
@@ -33,7 +33,11 @@
         <h2 class="text-2xl font-bold mb-4 text-white">Sobre mí</h2>
         <p class="text-gray-400 leading-relaxed">
           Soy Fernando, estudiante de Ingeniería Informática apasionado por el desarrollo de software. Me enfoco en
-          aplicaciones móviles y web, usando Kotlin, Laravel, JavaScript y más.
+          aplicaciones móviles y web, usando Kotlin, Laravel, JavaScript cómo principales teconlogías para el desarrollo
+          full-stack.
+          Además, poseo experiencia en el diseño y creación de bases de datos relacionales y no relacionales.
+          Me gusta mucho la programación y el aprendizaje continuo, por lo que busco oportunidades para aplicar mis
+          habilidades y expandirlas.
         </p>
       </div>
 
@@ -85,11 +89,29 @@
           <h3 class="text-lg font-semibold text-white">BrainMed</h3>
           <p class="text-gray-400">Sistema médico experto construido con Prolog que envía diagnósticos al front-end en
             CakePHP mediante AJAX.</p>
+          <a href="https://drive.google.com/file/d/1-trdS1i503ACVGz7UxKJ63Wrd2LtRZyU/view?usp=drive_link">Link al video
+            de demostración.</a>
           <div class="flex flex-wrap gap-2 mt-2">
             <span class="badge bg-pink-500">CakePHP</span>
             <span class="badge bg-yellow-300 text-black">Prolog</span>
             <span class="badge bg-blue-400 text-black">AJAX</span>
             <span class="badge bg-purple-500">Bootstrap</span>
+          </div>
+        </div>
+        <!-- Proyecto 4 -->
+        <div class="bg-gray-800 p-4 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-white mb-2">Metacalor</h3>
+          <p class="text-gray-400">
+            Aplicación web para el control y registro de calorías. Permite seleccionar alimentos desde una base de datos
+            con información nutrimental detallada y también añadir alimentos personalizados. La app facilita el
+            monitoreo diario de ingesta calórica y fue desarrollada para brindar un enfoque flexible y preciso en el
+            seguimiento nutricional.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="badge bg-blue-600">PHP</span>
+            <span class="badge bg-cyan-400 text-black">React</span>
+            <span class="badge bg-purple-500">Bootstrap</span>
+            <span class="badge bg-yellow-400 text-black">MySQL</span>
           </div>
         </div>
 
@@ -110,66 +132,82 @@
     © 2025 Fernando Luna
   </footer>
 
-  <!-- Modal carrusel -->
-  <div id="modal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
-    <div class="relative w-full max-w-2xl mx-auto">
-      <button onclick="closeCarousel()"
-        class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 rounded">✖</button>
-      <div class="flex justify-center items-center">
-        <button onclick="prevSlide()" class="text-white text-3xl px-4">⬅️</button>
-        <img id="carouselImage" class="max-h-[70vh] rounded" src="" alt="Imagen del proyecto">
-        <button onclick="nextSlide()" class="text-white text-3xl px-4">➡️</button>
+  <<!-- Modal carrusel -->
+    <div id="modal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+      <div class="relative w-full max-w-5xl mx-auto">
+        <button onclick="closeCarousel()"
+          class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 rounded">✖</button>
+        <div class="flex justify-center items-center gap-6 px-6">
+          <!-- Flecha izquierda -->
+          <button onclick="prevSlide()" class="text-white hover:text-gray-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          <!-- Imagen más grande -->
+          <img id="carouselImage" class="max-h-[90vh] max-w-[80vw] rounded object-contain shadow-lg" src=""
+            alt="Imagen del proyecto">
+
+          <!-- Flecha derecha -->
+          <button onclick="nextSlide()" class="text-white hover:text-gray-400 transition">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
       </div>
     </div>
-  </div>
 
-  <script>
-    let currentIndex = 0;
-    let images = [];
+    <script>
+      let currentIndex = 0;
+      let images = [];
 
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark');
-      document.body.classList.toggle('bg-white');
-      document.body.classList.toggle('text-gray-800');
-    }
+      function toggleDarkMode() {
+        document.documentElement.classList.toggle('dark');
+        document.body.classList.toggle('bg-white');
+        document.body.classList.toggle('text-gray-800');
+      }
 
-    function openCarousel(imgs) {
-      images = imgs;
-      currentIndex = 0;
-      document.getElementById('carouselImage').src = images[currentIndex];
-      document.getElementById('modal').classList.remove('hidden');
-      document.getElementById('modal').classList.add('flex');
-    }
+      function openCarousel(imgs) {
+        images = imgs;
+        currentIndex = 0;
+        document.getElementById('carouselImage').src = images[currentIndex];
+        document.getElementById('modal').classList.remove('hidden');
+        document.getElementById('modal').classList.add('flex');
+      }
 
-    function closeCarousel() {
-      document.getElementById('modal').classList.remove('flex');
-      document.getElementById('modal').classList.add('hidden');
-    }
+      function closeCarousel() {
+        document.getElementById('modal').classList.remove('flex');
+        document.getElementById('modal').classList.add('hidden');
+      }
 
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      document.getElementById('carouselImage').src = images[currentIndex];
-    }
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        document.getElementById('carouselImage').src = images[currentIndex];
+      }
 
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % images.length;
-      document.getElementById('carouselImage').src = images[currentIndex];
-    }
-  </script>
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        document.getElementById('carouselImage').src = images[currentIndex];
+      }
+    </script>
 
-  <style>
-    .badge {
-      padding: 0.75rem;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-      border-radius: 9999px;
-      color: white;
-    }
-  </style>
+    <style>
+      .badge {
+        padding: 0.75rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        padding-top: 0.25rem;
+        padding-bottom: 0.25rem;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        border-radius: 9999px;
+        color: white;
+      }
+    </style>
 </body>
 
 </html>

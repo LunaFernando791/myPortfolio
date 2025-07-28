@@ -5,25 +5,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fernando | Portafolio</title>
+  
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class'
-    }
-  </script>
-  <style>
-    body {
-      font-family: 'Nunito', sans-serif;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body class="bg-gray-900 text-gray-300">
 
   <header class="text-center p-6 bg-gray-800">
     <h1 class="text-4xl font-bold text-white">Fernando Luna</h1>
-    <p class="text-gray-400">Desarrollador Web & Móvil | Ingeniero Informático</p>
-
+    <p class="text-gray-400">Desarrollador Web & Móvil Jr | Ingeniero Informático</p>
   </header>
 
   <main class="max-w-5xl mx-auto px-6 py-10">
@@ -32,12 +23,18 @@
       <div class="md:w-1/2">
         <h2 class="text-2xl font-bold mb-4 text-white">Sobre mí</h2>
         <p class="text-gray-400 leading-relaxed">
-          Soy Fernando, estudiante de Ingeniería Informática apasionado por el desarrollo de software. Me enfoco en
-          aplicaciones móviles y web, usando Kotlin, Laravel, JavaScript cómo principales teconlogías para el desarrollo
-          full-stack.
-          Además, poseo experiencia en el diseño y creación de bases de datos relacionales y no relacionales.
-          Me gusta mucho la programación y el aprendizaje continuo, por lo que busco oportunidades para aplicar mis
-          habilidades y expandirlas.
+          Fernando Luna es un apasionado de la tecnología que desde joven mostró interés por el funcionamiento de
+          computadoras y software. Estudió una carrera técnica en sistemas computacionales, donde adquirió conocimientos
+          en programación, bases de datos y desarrollo web. Actualmente cursa la carrera de ingeniería en informática en
+          la Universidad de Guadalajara.
+        </p>
+        <p class="text-gray-400 mt-4 leading-relaxed">
+          Me considero una persona responsable, comprometida y con muchas ganas de aprender y crecer en el ámbito de la
+          programación y la tecnología. Me gusta trabajar en equipo y siempre estoy dispuesto a ayudar a los demás.
+          Me apasiona la idea de poder crear soluciones tecnológicas que mejoren la vida de las personas y que
+          contribuyan
+          al desarrollo de la sociedad. Estoy siempre en busca de nuevos retos y oportunidades para seguir aprendiendo y
+          creciendo como profesional.
         </p>
       </div>
 
@@ -48,50 +45,138 @@
         </div>
       </div>
     </section>
+    <hr class="mb-12">
+    <section class="text-center mb-12">
+      <h2 class="text-2xl font-bold mb-4 text-white">Tecnologías</h2>
+      <div class="flex flex-wrap justify-center gap-6">
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/html5.svg" alt="HTML5" width="40" height="40"
+            class="dark:invert">
+          <p class="text-white text-sm mt-2">HTML5</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/css3.svg" alt="CSS3" width="40" height="40"
+            class="dark:invert">
+          <p class="text-white text-sm mt-2">CSS3</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/php.svg" alt="PHP" width="40" height="40"
+            class="dark:invert">
+          <p class="text-white text-sm mt-2">PHP</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/javascript.svg" alt="JavaScript" width="40"
+            height="40" class="dark:invert">
+          <p class="text-white text-sm mt-2">JavaScript</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" alt="Python" width="40"
+            height="40" class="dark:invert">
+          <p class="text-white text-sm mt-2">Python</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/kotlin.svg" alt="Kotlin" width="40"
+            height="40" class="dark:invert">
+          <p class="text-white text-sm mt-2">Kotlin</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cakephp.svg" alt="CakePHP" width="40"
+            height="40" class="dark:invert">
+          <p class="text-white text-sm mt-2">CakePHP</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/laravel.svg" alt="Laravel" width="40"
+            height="40" class="dark:invert">
+          <p class="text-white text-sm mt-2">Laravel</p>
+        </div>
+
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" alt="MySQL" width="40" height="40"
+            class="dark:invert">
+          <p class="text-white text-sm mt-2">MySQL</p>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/docker.svg" alt="Docker" width="40"
+            height="40" class="dark:invert">
+          <p class="text-white text-sm mt-2">Docker</p>
+        </div>
+
+      </div>
+    </section>
+
+    <hr>
 
     <!-- Proyectos -->
-    <section>
+    <section class="mt-12">
       <h2 class="text-2xl font-bold mb-6 text-white">Proyectos</h2>
       <div class="grid md:grid-cols-2 gap-6">
-
         <!-- Proyecto 1 -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow">
+        <div class="opacity-0 translate-y-6 transition-all duration-700 ease-out reveal-on-scroll bg-gray-800 p-4 rounded-lg shadow">
           <img src="img/encript1.png" alt="Proyecto 1" class="rounded mb-3 cursor-pointer"
             onclick="openCarousel(['img/encript1.png','img/encript2.png'])">
           <h3 class="text-lg font-semibold text-white">Encriptador de texto</h3>
           <p class="text-gray-400">App web para encriptar mensajes con JavaScript.</p>
           <div class="flex flex-wrap gap-2 mt-2">
-            <span class="badge bg-yellow-600">JavaScript</span>
-            <span class="badge bg-indigo-500">CSS</span>
             <span class="badge bg-red-500">HTML</span>
+            <span class="badge bg-indigo-500">CSS</span>
+            <span class="badge bg-yellow-600">JavaScript</span>
           </div>
         </div>
-
         <!-- Proyecto 2 -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow">
-          <img src="img/fitness.png" alt="Proyecto 2" class="rounded mb-3 cursor-pointer" onclick="openCarousel(['img/fitness.png','img/fitness2.png', 'img/fitness4.png', 
+         <div class="opacity-0 translate-y-6 transition-all duration-700 ease-out reveal-on-scroll bg-gray-800 p-4 rounded-lg shadow">
+          <h3 class="text-lg font-semibold text-white mb-2">Metacalor</h3>
+          <p class="text-gray-400">
+            Aplicación web para el control y registro de caloríco del usuario. Permite seleccionar alimentos desde una base de datos
+            con información nutrimental detallada y también añadir alimentos personalizados. La app facilita el
+            monitoreo diario de ingesta calórica y fue desarrollada para brindar un enfoque flexible y preciso en el
+            seguimiento nutricional dando advertencias y notificaciones cuando se estaba a punto de llegar al límite
+            de calorías por día o si se excedía dicho límite.
+          </p>
+          <div class="flex flex-wrap gap-2 mt-4">
+            <span class="badge bg-blue-600">PHP</span>
+            <span class="badge bg-cyan-400 text-black">React</span>
+            <span class="badge bg-purple-500">Bootstrap</span>
+            <span class="badge bg-cyan-400 text-black">MySQL</span>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="opacity-0 translate-y-6 transition-all duration-700 ease-out reveal-on-scroll bg-gray-800 p-4 rounded-lg shadow">
+          <img src="img/fitness.png" alt="Proyecto 3" class="rounded mb-3 cursor-pointer"
+            onclick="openCarousel(['img/fitness.png','img/fitness2.png', 'img/fitness4.png', 
                'img/fitness5.png', 'img/fitness6.png', 'img/fitness7.png', 'img/fitness8.png'
                , 'img/fitness9.png', 'img/fitness10.jpeg', 'img/fitness11.jpeg', 'img/fitness12.jpeg', 'img/fitness13.jpeg', 'img/fitness14.jpeg'])">
-
-
-
-          <h3 class="text-lg font-semibold text-white">FitnessTracking.</h3>
-          <p class="text-gray-400">Sistema de ejercicio para trackeo del cuerpo integrada con una API REST a una app
-            móvil.</p>
+          <h3 class="text-lg font-semibold text-white">FitnessTracking</h3>
+          <p class="text-gray-400">Sistema de ejercicio con rutinas personalizadas para trackeo del cuerpo integrada con una API REST a una app
+            móvil. Utiliza un algoritmo KNN para crear la rutina del usuario en base a sus características y objetivos. Además, utiliza 
+            la tecnología de Google MediaPIPE para crear modelos de maching learning que identificaran los ejercicios a realizar para validar 
+            las repeticiones del usuario.
+            <p class="text-gray-400"> 
+            Ganó mención honorífica en el concurso de innovación tecnológica del Centro Universitario de Ciencias Exactas 
+            e Ingenierías.</p>
+          </p>
           <div class="flex flex-wrap gap-2 mt-2">
             <span class="badge bg-red-600">Laravel</span>
             <span class="badge bg-green-400 text-black">MediaPIPE</span>
             <span class="badge bg-blue-700">Bootstrap</span>
             <span class="badge bg-indigo-500">Kotlin</span>
+            <span class="badge bg-cyan-500 text-black">MySQL</span>
           </div>
         </div>
-        <!-- Proyecto 3 -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow">
-          <img src="img/brainMed.jpg" alt="Proyecto 3" class="rounded mb-3 cursor-pointer"
+        <!-- Proyecto 4 -->
+        <div class="opacity-0 translate-y-6 transition-all duration-700 ease-out reveal-on-scroll bg-gray-800 p-4 rounded-lg shadow">
+          <img src="img/brainMed.jpg" alt="Proyecto 4" class="rounded mb-3 cursor-pointer"
             onclick="openCarousel(['img/brainMed.jpg', 'img/brainMed2.png', 'img/brainMed3.png'])">
           <h3 class="text-lg font-semibold text-white">BrainMed</h3>
           <p class="text-gray-400">Sistema médico experto construido con Prolog que envía diagnósticos al front-end en
-            CakePHP mediante AJAX.</p>
+            CakePHP mediante AJAX para la actualización dinámica del front-end.</p>
           <a href="https://drive.google.com/file/d/1-trdS1i503ACVGz7UxKJ63Wrd2LtRZyU/view?usp=drive_link">Link al video
             de demostración.</a>
           <div class="flex flex-wrap gap-2 mt-2">
@@ -101,24 +186,26 @@
             <span class="badge bg-purple-500">Bootstrap</span>
           </div>
         </div>
-        <!-- Proyecto 4 -->
-        <div class="bg-gray-800 p-4 rounded-lg shadow">
-          <h3 class="text-lg font-semibold text-white mb-2">Metacalor</h3>
+        <!-- Proyecto 5 -->
+         <div class="opacity-0 translate-y-6 transition-all duration-700 ease-out reveal-on-scroll bg-gray-800 p-4 rounded-lg shadow">
+          <img src="img/plataformaBlog.png" alt="Proyecto 5" class="rounded mb-3 cursor-pointer"
+            onclick="openCarousel(['img/plataformaBlog.png', 'img/plataformaBlog2.png', 'img/plataformaBlog3.png', 'img/plataformaBlog4.png'
+              , 'img/plataformaBlog5.png', 'img/plataformaBlog6.png', 'img/plataformaBlog7.png', 'img/plataformaBlog8.png', 'img/plataformaBlog9.png'
+            ])">
+          <h3 class="text-lg font-semibold text-white">Plataforma de Blogs de Lucha Libre</h3>
           <p class="text-gray-400">
-            Aplicación web para el control y registro de calorías. Permite seleccionar alimentos desde una base de datos
-            con información nutrimental detallada y también añadir alimentos personalizados. La app facilita el
-            monitoreo diario de ingesta calórica y fue desarrollada para brindar un enfoque flexible y preciso en el
-            seguimiento nutricional.
+            Sitio web dinámico y responsivo desarrollado con Laravel y Tailwind CSS, enfocado en la publicación de contenido sobre lucha libre. Permite a los usuarios autenticarse, crear, editar y eliminar publicaciones según su rol.
+            <p class="text-gray-400"><strong>Escritores:</strong> pueden crear y editar sus propias publicaciones.</p>
+            <p class="text-gray-400">
+            <strong>Administradores:</strong> poseen control completo sobre todas las entradas y gestión de usuarios (crear, editar y eliminar).
+            </p>
           </p>
-          <div class="flex flex-wrap gap-2 mt-4">
-            <span class="badge bg-blue-600">PHP</span>
-            <span class="badge bg-cyan-400 text-black">React</span>
-            <span class="badge bg-purple-500">Bootstrap</span>
-            <span class="badge bg-yellow-400 text-black">MySQL</span>
-          </div>
-        </div>
-
-
+          <div class="flex flex-wrap gap-2 mt-2">
+            <span class="badge bg-red-600">Laravel</span>
+            <span class="badge bg-blue-400 text-black">Tailwind CSS</span>
+            <span class="badge bg-green-500 text-black">MySQL</span>
+         </div>
+        
       </div>
     </section>
 
@@ -136,81 +223,34 @@
   </footer>
 
   <!-- Modal carrusel -->
-    <div id="modal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
-      <div class="relative w-full max-w-5xl mx-auto">
-        <button onclick="closeCarousel()"
-          class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 rounded">✖</button>
-        <div class="flex justify-center items-center gap-6 px-6">
-          <!-- Flecha izquierda -->
-          <button onclick="prevSlide()" class="text-white hover:text-gray-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-            </svg>
-          </button>
+  <div id="modal" class="fixed inset-0 bg-black bg-opacity-80 hidden items-center justify-center z-50">
+    <div class="relative w-full max-w-5xl mx-auto">
+      <button onclick="closeCarousel()"
+        class="absolute top-2 right-2 bg-red-600 text-white px-3 py-1 rounded">✖</button>
+      <div class="flex justify-center items-center gap-6 px-6">
+        <!-- Flecha izquierda -->
+        <button onclick="prevSlide()" class="text-white hover:text-gray-400 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
 
-          <!-- Imagen más grande -->
-          <img id="carouselImage" class="max-h-[90vh] max-w-[80vw] rounded object-contain shadow-lg" src=""
-            alt="Imagen del proyecto">
+        <!-- Imagen más grande -->
+        <img id="carouselImage" class="max-h-[90vh] max-w-[80vw] rounded object-contain shadow-lg" src=""
+          alt="Imagen del proyecto">
 
-          <!-- Flecha derecha -->
-          <button onclick="nextSlide()" class="text-white hover:text-gray-400 transition">
-            <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </button>
-        </div>
+        <!-- Flecha derecha -->
+        <button onclick="nextSlide()" class="text-white hover:text-gray-400 transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10" fill="none" viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
     </div>
-
-    <script>
-      let currentIndex = 0;
-      let images = [];
-
-      function toggleDarkMode() {
-        document.documentElement.classList.toggle('dark');
-        document.body.classList.toggle('bg-white');
-        document.body.classList.toggle('text-gray-800');
-      }
-
-      function openCarousel(imgs) {
-        images = imgs;
-        currentIndex = 0;
-        document.getElementById('carouselImage').src = images[currentIndex];
-        document.getElementById('modal').classList.remove('hidden');
-        document.getElementById('modal').classList.add('flex');
-      }
-
-      function closeCarousel() {
-        document.getElementById('modal').classList.remove('flex');
-        document.getElementById('modal').classList.add('hidden');
-      }
-
-      function prevSlide() {
-        currentIndex = (currentIndex - 1 + images.length) % images.length;
-        document.getElementById('carouselImage').src = images[currentIndex];
-      }
-
-      function nextSlide() {
-        currentIndex = (currentIndex + 1) % images.length;
-        document.getElementById('carouselImage').src = images[currentIndex];
-      }
-    </script>
-
-    <style>
-      .badge {
-        padding: 0.75rem;
-        padding-left: 0.75rem;
-        padding-right: 0.75rem;
-        padding-top: 0.25rem;
-        padding-bottom: 0.25rem;
-        font-size: 0.875rem;
-        line-height: 1.25rem;
-        border-radius: 9999px;
-        color: white;
-      }
-    </style>
+  </div>
+  <script src="app.js"></script>
 </body>
 
 </html>

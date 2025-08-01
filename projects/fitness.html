@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <div class="header__menu__logo">
+                <h2 class="header__menu__logo__title">Fernando Luna</h2>
+                <p class="header__menu__logo__paragraph">Web developer fullstack Jr | Computer Science Engineer</p>
+            </div>
+            <a class="header__menu__link" href="../index.html">Home</a>
+            <a class="header__menu__link" href="../about.html">About me</a>
+            <a class="header__menu__link" href="../projects.html">Projects</a>
+        </nav>
+    </header>
+    <main class="presentation__project">
+        <section class="presentation__project__title">
+            <h1>FitnessTracking</h1>
+            <a href="https://github.com/LunaFernando791/TrakingFitnessApp" target="_blank"><img
+                    src="../assets/githubLogo.svg" alt=""></a>
+        </section>
+        <section class="presentation__project__content">
+            <div class="project__description">
+                <h2>Description</h2>
+                <p>FitnessTracking is an innovative exercise tracking system designed to generate personalized workout
+                    routines and monitor user performance through advanced machine learning and computer vision. The
+                    system integrates a RESTful API built with <strong>Laravel</strong> to communicate seamlessly with a
+                    mobile application developed in <strong>Kotlin</strong>, using <strong>Jetpack Compose</strong> for
+                    a modern and responsive UI experience.</p>
+                <p>At its core, the app uses a K-Nearest Neighbors (KNN) algorithm to tailor workout plans based on each
+                    user's physical characteristics and fitness goals. To validate exercise execution and count
+                    repetitions, the system leverages <strong>Google MediaPipe</strong>, enabling real-time pose
+                    estimation and activity recognition through custom machine learning models.</p>
+                <p>To enhance user engagement and retention, FitnessTracking incorporates gamification mechanics such as
+                    achievement badges, level progression, and global rankings. These features encourage consistent
+                    participation and foster a sense of community among users.</p>
+                <p>The backend infrastructure is powered by <strong> Laravel and MySQL </strong>, ensuring robust data
+                    management and scalable API performance. The project also utilizes <strong>Bootstrap</strong> for
+                    web-based components and <strong>AWS</strong> for cloud deployment and media handling.</p>
+                <p>This project earned an honorable mention at the Technological Innovation Contest hosted by the Centro
+                    Universitario de Ciencias Exactas e Ingenierías, recognizing its technical depth and user-centric
+                    design.</p>
+            </div>
+            <div class="project__technologies">
+                <h2>Technologies used</h2>
+                <hr>
+                <div class="presentation__technologies__icons">
+                    <div class="tech">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/laravel.svg" alt="Laravel"
+                            width="40" height="40" class="icon">
+                        <span>Laravel</span>
+                    </div>
+                    <div class="tech">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/kotlin.svg" alt="Kotlin"
+                            width="40" height="40" class="icon">
+                        <span>Kotlin</span>
+                    </div>
+                    <div class="tech">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mysql.svg" alt="MySQL"
+                            width="40" height="40" class="icon">
+                        <span>MySQL</span>
+                    </div>
+                    <div class="tech">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/mediapipe.svg" alt="MediaPipe"
+                            width="40" height="40" class="icon">
+                        <span>MediaPipe</span>
+                    </div>
+
+                    <div class="tech">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/jetpackcompose.svg"
+                            alt="Jetpack Compose" width="40" height="40" class="icon">
+                        <span>Jetpack Compose</span>
+                    </div>
+
+                    <div class="tech">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/amazonaws.svg"
+                            alt="Amazon Web Services" width="40" height="40" class="icon">
+                        <span>AWS</span>
+                    </div>
+
+                    <div class="tech">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bootstrap.svg" alt="Bootstrap"
+                            width="40" height="40" class="icon">
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        </section>
+        <section class="presentation__project__gallery">
+            <h2>Gallery</h2>
+            <hr>
+            <div class="gallery">
+                <img src="../assets/fitness.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 0)">
+
+                <img src="../assets/fitness2.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 1)">
+
+                <img src="../assets/fitness3.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 2)">
+
+                <img src="../assets/fitness4.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 3)">
+
+                <img src="../assets/fitness5.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 4)">
+
+                <img src="../assets/fitness6.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 5)">
+
+                <img src="../assets/fitness7.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 6)">
+
+                <img src="../assets/fitness8.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 7)">
+
+                <img src="../assets/fitness9.png" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 8)">
+
+                <img src="../assets/fitness10.jpeg" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 9)">
+
+                <img src="../assets/fitness11.jpeg" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 10)">
+
+                <img src="../assets/fitness12.jpeg" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 11)">
+
+                <img src="../assets/fitness13.jpeg" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 12)">
+
+                <img src="../assets/fitness14.jpeg" alt="fitness"
+                    onclick="openCarousel(['../assets/fitness.png','../assets/fitness2.png','../assets/fitness3.png','../assets/fitness4.png','../assets/fitness5.png','../assets/fitness6.png','../assets/fitness7.png','../assets/fitness8.png','../assets/fitness9.png','../assets/fitness10.jpeg','../assets/fitness11.jpeg','../assets/fitness12.jpeg','../assets/fitness13.jpeg','../assets/fitness14.jpeg'], 13)">
+            </div>
+
+
+        </section>
+    </main>
+    <footer class="footer">
+        © 2025 Fernando Luna
+    </footer>
+    <!-- Modal Carousel -->
+    <div id="modal">
+        <div class="relative">
+            <!-- Close Button -->
+            <button onclick="closeCarousel()">Salir</button>
+
+            <!-- Carousel Container -->
+            <div class="flex">
+
+                <!-- Left Arrow -->
+                <button onclick="prevSlide()"
+                    style="background-color: rgba(0,0,0,0.5); border: none; padding: 10px; border-radius: 50%; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                    </svg>
+                </button>
+
+                <!-- Image Display -->
+                <img id="carouselImage" src="" alt="Imagen del proyecto"
+                    style="max-width: 80%; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+
+                <!-- Right Arrow -->
+                <button onclick="nextSlide()"
+                    style="background-color: rgba(0,0,0,0.5); border: none; padding: 10px; border-radius: 50%; cursor: pointer;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="white" viewBox="0 0 24 24">
+                        <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+                    </svg>
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="../app.js"></script>
+</body>
+
+</html>

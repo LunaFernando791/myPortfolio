@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="header__menu">
+            <div class="header__menu__logo">
+                <h2 class="header__menu__logo__title">Fernando Luna</h2>
+                <p class="header__menu__logo__paragraph">Web developer fullstack Jr | Computer Science Engineer</p>
+            </div>
+            <a class="header__menu__link" href="index.html">Home</a>
+            <a class="header__menu__link" href="about.html">About me</a>
+            <a class="header__menu__link" href="projects.html">Projects</a>
+        </nav>
+    </header>
+    <main class="presentation__projects">
+        <h1>My Projects</h1>
+        <hr>
+        <section class="presentation__projects__link">
+            <a href="projects/encrypting.html" class="reveal-on-scroll project">
+                <img src="assets/encript1.png" alt="Text Encrypting image" class="project__image">
+                <div class="project__info">
+                    <h2>Text Encrypting</h2>
+                    <p>Web app to encrypt messages with JavaScript</p>
+                    <div class="project__info__technologies">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </a>
+            <a href="projects/fitness.html" class="project reveal-on-scroll">
+                <img src="assets/fitness.png" alt="FitnessTracking image" class="project__image">
+                <div class="project__info">
+                    <h2>FitnessTracking</h2>
+                    <p>Exercise system with personalized routines for body tracking integrated with a REST API to a
+                        mobile app.</p>
+                    <div class="project__info__technologies">
+                        <span>Laravel</span>
+                        <span>Kotlin</span>
+                        <span>AWS</span>
+                        <span>MediaPIPE</span>
+                    </div>
+                </div>
+            </a>
+            <a href="projects/brainmed.html" class="project  reveal-on-scroll">
+                <img src="assets/brainMed.jpg" alt="BrainMed image" class="project__image">
+                <div class="project__info">
+                    <h2>BrainMed</h2>
+                    <p>Expert medical system built with Prolog that sends diagnostics to the CakePHP front-end via AJAX
+                        for dynamic updating of the front-end.</p>
+                    <div class="project__info__technologies">
+                        <span>CakePHP</span>
+                        <span>AJAX</span>
+                        <span>Bootstrap</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </a>
+            <a href="projects/wrestlingblog.html" class="project  reveal-on-scroll">
+                <img src="assets/plataformaBlog.png" alt="WrestlingBlog image" class="project__image">
+                <div class="project__info">
+                    <h2>Wrestling Blogging Platform</h2>
+                    <p>Dynamic and responsive website developed with Laravel and Tailwind CSS, focused on publishing
+                        content about wrestling.</p>
+                    <div class="project__info__technologies">
+                        <span>Laravel</span>
+                        <span>Tailwind</span>
+                        <span>MySQL</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+    <footer class="footer">
+        © 2025 Fernando Luna
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

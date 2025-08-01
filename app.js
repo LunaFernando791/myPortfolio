@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add('visible'); // Usa tu clase definida en styles.css
         observer.unobserve(entry.target); // Si solo quieres que se anime una vez
       }
     });
@@ -13,36 +13,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-//CARRUSEL
 
 let currentIndex = 0;
-    let images = [];
+let images = [];
 
-    function toggleDarkMode() {
-      document.documentElement.classList.toggle('dark');
-      document.body.classList.toggle('bg-white');
-      document.body.classList.toggle('text-gray-800');
-    }
+function openCarousel(imgs, startIndex) {
+  images = imgs;
+  currentIndex = startIndex;
+  document.getElementById('carouselImage').src = images[currentIndex];
+  document.getElementById('modal').classList.add('active'); // Show modal
+}
 
-    function openCarousel(imgs) {
-      images = imgs;
-      currentIndex = 0;
-      document.getElementById('carouselImage').src = images[currentIndex];
-      document.getElementById('modal').classList.remove('hidden');
-      document.getElementById('modal').classList.add('flex');
-    }
+function closeCarousel() {
+  document.getElementById('modal').classList.remove('active'); // Hide modal
+}
 
-    function closeCarousel() {
-      document.getElementById('modal').classList.remove('flex');
-      document.getElementById('modal').classList.add('hidden');
-    }
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  document.getElementById('carouselImage').src = images[currentIndex];
+}
 
-    function prevSlide() {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      document.getElementById('carouselImage').src = images[currentIndex];
-    }
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % images.length;
+  document.getElementById('carouselImage').src = images[currentIndex];
+}
 
-    function nextSlide() {
-      currentIndex = (currentIndex + 1) % images.length;
-      document.getElementById('carouselImage').src = images[currentIndex];
-    }

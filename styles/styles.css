@@ -223,6 +223,7 @@ img.icon {
 }
 .project__info__technologies{
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
